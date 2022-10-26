@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Alarm Clock</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <h3 onload="mytime()" id="time"></h3>
+
+      <h4 style="color: green" id="alarm-hours"></h4>
+
+      <button class="hide" id="stop">Stop Alarm</button>
+
+      <div class="alarm-body">
+        <input type="number" id="hours" />
+        <input type="number" id="minutes" />
+        <button type="submit" id="btn">Set</button>
+      </div>
+    </div>
+
+    <script src="clock.js"></script>
+  </body>
+</html>
